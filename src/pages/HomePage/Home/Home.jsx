@@ -24,7 +24,7 @@ const Home = () => {
             <TopBar></TopBar>
             <DndProvider backend={HTML5Backend}>
                 <div className='flex'>
-                    <SideBar selected={selected} handleSelection={handleSelection} ></SideBar>
+                    <SideBar handleSelection={handleSelection}></SideBar>
                     <Canvas items={items} selected={selected} handleDrop={handleDrop}></Canvas>
                 </div>
             </DndProvider>
